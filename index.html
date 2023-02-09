@@ -17,7 +17,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-10 mx-auto py-3"><!--exclusive centered col 4 card-->
-                <form>
+                <form class="border border-light border-2 rounded-3 p-0">
                     <!--start card inside form-->
                     <div class="card">
                         <div class="card-header"><!--exclusive card-header for h4-->
@@ -63,49 +63,33 @@
                                                 <input type="text" class="form-control" id="inCity">
                                             </fieldset>
                                             <fieldset class="col-12"><!--forced row 4 Payment-->
-                                                <label for="ckPoint" class="form-label mb-3">We accept:</label>
-                                                <!--start btn-group-->
-                                                <div class="btn-group-inline" role="group" id="ckPoint">
-                                                    <!--start button1-->
-                                                    <button type="button" class="btn btn-secondary">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio"
-                                                                name="cardRadio" id="1Card" value="option1" checked>
-                                                            <label class="form-check-label" for="1Card"><i
-                                                                    class="bi bi-credit-card"></i></label>
-                                                        </div>
-                                                    </button><!--end button1-->
-
-                                                    <!--start button2-->
-                                                    <button type="button" class="btn btn-secondary">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio"
-                                                                name="cardRadio" id="2Card" value="option2">
-                                                            <label class="form-check-label" for="2Card"><i
-                                                                    class="bi bi-credit-card-2-back-fill"></i></label>
-                                                        </div>
-                                                    </button><!--end button2-->
-
-                                                    <!--start button3-->
-                                                    <button type="button" class="btn btn-secondary">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio"
-                                                                name="cardRadio" id="3Card" value="option3">
-                                                            <label class="form-check-label" for="3Card"><i
-                                                                    class="bi bi-credit-card-2-front"></i></label>
-                                                        </div>
-                                                    </button><!--end button3-->
-
-                                                    <!--start button4-->
-                                                    <button type="button" class="btn btn-secondary">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio"
-                                                                name="cardRadio" id="4Card" value="option4">
-                                                            <label class="form-check-label" for="4Card"><i
-                                                                    class="bi bi-credit-card-fill"></i></label>
-                                                        </div>
-                                                    </button><!--end button4-->
-                                                </div><!--end btn-group-->
+                                                <label for="ckPoint" class="form-label">We accept:</label>
+                                                <fieldset class="col-6 bg-secondary rounded me-0 p-2" id="ckPoint">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="cardRadio"
+                                                            id="1Card" value="option1" checked>
+                                                        <label class="form-check-label" for="1Card"><i
+                                                                class="bi bi-credit-card"></i></label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="cardRadio"
+                                                            id="2Card" value="option2">
+                                                        <label class="form-check-label" for="2Card"><i
+                                                                class="bi bi-credit-card-2-back-fill"></i></label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="cardRadio"
+                                                            id="3Card" value="option3">
+                                                        <label class="form-check-label" for="3Card"><i
+                                                                class="bi bi-credit-card-2-front"></i></label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="cardRadio"
+                                                            id="4Card" value="option4">
+                                                        <label class="form-check-label" for="4Card"><i
+                                                                class="bi bi-credit-card-fill"></i></label>
+                                                    </div>
+                                                </fieldset>
                                             </fieldset><!--end forced row 4 Payment-->
                                         </div><!--end exclusive row 4 First Name + City + Payment-->
                                     </div> <!--end left col w only row-->
@@ -124,7 +108,7 @@
                                             <fieldset class="col"><!--start left col-->
                                                 <label for="usState" class="form-label">State</label>
                                                 <select id="usState" class="form-select">
-                                                    <option>Select a state</option>
+                                                    <option>Pick a state</option>
                                                     <option>idk i'm not from the us</option>
                                                     <option>wisconsin is cool tho</option>
                                                     <option>washington as well</option>
